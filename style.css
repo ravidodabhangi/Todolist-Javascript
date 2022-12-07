@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.638);
+  height: 100vh;
+}
+#todo-contaainer {
+  width: 100%;
+  height: inherit;
+}
+#todo-contaainer .todo-box {
+  position: relative;
+  top: 10%;
+  width: 30%;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  gap: 10px;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.619);
+  background-color: rgb(25, 80, 243);
+  border-top: 5px solid crimson;
+  border-left: 5px solid crimson;
+  border-right: 5px solid crimson;
+}
+#todo-contaainer .todo-box h1 {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  text-shadow: 5px 5px 20px black;
+}
+.form-box {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: inherit;
+}
+.form-box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 30px;
+}
+.form-box > form > input {
+  width: 80%;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  text-transform: capitalize;
+  font-family: "Courier New", Courier, monospace;
+}
+.form-box form button {
+  width: 10.5%;
+  padding: 8px 0px;
+  color: white;
+  border: 3px solid gray;
+  background-color: green;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 100%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.form-box form button i {
+  font-size: 17px;
+}
+.data-box {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.619);
+  border-bottom: 5px solid royalblue;
+}
+.data-box div {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.619);
+}
+
+.data-box div .dbtn {
+  padding: 13px 14px;
+  border: 3px solid blue;
+  color: white;
+  background-color: red;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+  border-radius: 100%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.data-box div .ebtn {
+  padding: 8px 16px;
+  border: 3px solid blue;
+  color: white;
+  font-size: 11px;
+  background-color: purple;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.data-box > div input:nth-child(1) {
+  font-size: 18px;
+}
+.data-box > div input:nth-child(2) {
+  width: 50%;
+  padding: 8px 10px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  color: rgb(80, 76, 76);
+  cursor: pointer;
+  margin-right: 65px;
+}
+
+div input.line {
+  text-decoration: line-through;
+}
+.data-box input.active {
+  border: 1px solid gray;
+}
+i {
+  color: white;
+  font-size: 13.5px;
+}
